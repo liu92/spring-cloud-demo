@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/eureka-client/pom.xml" />
         <option value="$PROJECT_DIR$/service-ribbon/pom.xml" />
         <option value="$PROJECT_DIR$/service-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/../incubator-dubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-api/pom.xml" />
       </list>
     </option>
   </component>
