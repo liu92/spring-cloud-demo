@@ -88,10 +88,24 @@
     <file url="file://$PROJECT_DIR$/../incubator-dubbo/dubbo-test/dubbo-test-compatibility/dubbo-test-spring3" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../incubator-dubbo/dubbo-test/dubbo-test-integration" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consumer-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consumer-hystrix-dashboard" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server-7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server-7002" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-ribbon" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-config-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-config-client-8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-config-eureka-client-7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-provider-6001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-provider-6002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-provider-hystrix-6003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-zuul-gateway" charset="UTF-8" />
   </component>
 </project>

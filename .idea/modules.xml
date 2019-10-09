@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud-consumer/cloud-consumer.iml" filepath="$PROJECT_DIR$/cloud-consumer/cloud-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer-feign/consumer-feign.iml" filepath="$PROJECT_DIR$/consumer-feign/consumer-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer-hystrix-dashboard/consumer-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/consumer-hystrix-dashboard/consumer-hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/../incubator-dubbo/dubbo-all/dubbo.iml" filepath="$PROJECT_DIR$/../incubator-dubbo/dubbo-all/dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../incubator-dubbo/dubbo-bom/dubbo-bom.iml" filepath="$PROJECT_DIR$/../incubator-dubbo/dubbo-bom/dubbo-bom.iml" />
       <module fileurl="file://$PROJECT_DIR$/../incubator-dubbo/dubbo-cluster/dubbo-cluster.iml" filepath="$PROJECT_DIR$/../incubator-dubbo/dubbo-cluster/dubbo-cluster.iml" />
@@ -90,10 +93,21 @@
       <module fileurl="file://$PROJECT_DIR$/../incubator-dubbo/dubbo-test/dubbo-test-compatibility/dubbo-test-spring3/dubbo-test-spring3.iml" filepath="$PROJECT_DIR$/../incubator-dubbo/dubbo-test/dubbo-test-compatibility/dubbo-test-spring3/dubbo-test-spring3.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/eureka-client/eureka-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server-7001/eureka-server-7001.iml" filepath="$PROJECT_DIR$/eureka-server-7001/eureka-server-7001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server-7002/eureka-server-7002.iml" filepath="$PROJECT_DIR$/eureka-server-7002/eureka-server-7002.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-feign/service-feign.iml" filepath="$PROJECT_DIR$/service-feign/service-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-ribbon/service-ribbon.iml" filepath="$PROJECT_DIR$/service-ribbon/service-ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-api/spring-cloud-api.iml" filepath="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-config/spring-cloud-config.iml" filepath="$PROJECT_DIR$/spring-cloud-config/spring-cloud-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-config-client/spring-cloud-config-client.iml" filepath="$PROJECT_DIR$/spring-cloud-config-client/spring-cloud-config-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-config-client-8001/spring-cloud-config-client-8001.iml" filepath="$PROJECT_DIR$/spring-cloud-config-client-8001/spring-cloud-config-client-8001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-config-eureka-client-7001/spring-cloud-config-eureka-client-7001.iml" filepath="$PROJECT_DIR$/spring-cloud-config-eureka-client-7001/spring-cloud-config-eureka-client-7001.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-demo.iml" filepath="$PROJECT_DIR$/spring-cloud-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-provider/spring-cloud-provider.iml" filepath="$PROJECT_DIR$/spring-cloud-provider/spring-cloud-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-provider-6001/spring-cloud-provider-6001.iml" filepath="$PROJECT_DIR$/spring-cloud-provider-6001/spring-cloud-provider-6001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-provider-6002/spring-cloud-provider-6002.iml" filepath="$PROJECT_DIR$/spring-cloud-provider-6002/spring-cloud-provider-6002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-provider-hystrix-6003/spring-cloud-provider-hystrix-6003.iml" filepath="$PROJECT_DIR$/spring-cloud-provider-hystrix-6003/spring-cloud-provider-hystrix-6003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-zuul-gateway/spring-cloud-zuul-gateway.iml" filepath="$PROJECT_DIR$/spring-cloud-zuul-gateway/spring-cloud-zuul-gateway.iml" />
     </modules>
   </component>
 </project>

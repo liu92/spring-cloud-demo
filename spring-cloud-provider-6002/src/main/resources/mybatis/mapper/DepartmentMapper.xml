@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.cloud.provider.mapper.DepartmentMapper">
+
+    <resultMap id="BaseResultMap" type="org.cloud.api.po.Department">
+        <id column="id" property="id" javaType="INT"/>
+        <result column="department_name" property="departmentName" jdbcType="DATE"/>
+    </resultMap>
+
+    <select id="findById" resultMap="BaseResultMap" parameterType="int">
+        select id, department_name from department where id=#{id};
+    </select>
+    <select id="findAll" resultMap="BaseResultMap">
+        select id, department_name from department;
+    </select>
+    <insert id="add" parameterType="org.cloud.api.po.Department">
+        INSERT INTO department(department_name) VALUES(#{departmentName});
+    </insert>
+
+</mapper>

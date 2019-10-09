@@ -6,14 +6,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud-consumer" />
+        <module name="consumer-feign" />
+        <module name="consumer-hystrix-dashboard" />
         <module name="eureka-client" />
         <module name="eureka-server" />
+        <module name="eureka-server-7001" />
+        <module name="eureka-server-7002" />
         <module name="service-feign" />
         <module name="service-ribbon" />
         <module name="spring-cloud-api" />
+        <module name="spring-cloud-config" />
+        <module name="spring-cloud-config-client" />
+        <module name="spring-cloud-config-client-8001" />
+        <module name="spring-cloud-config-eureka-client-7001" />
+        <module name="spring-cloud-provider" />
+        <module name="spring-cloud-provider-6001" />
+        <module name="spring-cloud-provider-6002" />
+        <module name="spring-cloud-provider-hystrix-6003" />
+        <module name="spring-cloud-zuul-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloud-consumer" target="1.8" />
+      <module name="cloud-consumer-feign" target="1.8" />
+      <module name="consumer-feign" target="1.8" />
+      <module name="consumer-hystrix-dashboard" target="1.8" />
       <module name="dubbo" target="1.8" />
       <module name="dubbo-bom" target="1.8" />
       <module name="dubbo-cluster" target="1.8" />
@@ -103,10 +121,24 @@
       <module name="eureka-client" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="eureka-server (1) (com.eureka)" target="1.8" />
+      <module name="eureka-server-7001" target="1.8" />
+      <module name="eureka-server-7002" target="1.8" />
       <module name="service-feign" target="1.8" />
       <module name="service-ribbon" target="1.8" />
       <module name="spring-cloud-api" target="1.8" />
+      <module name="spring-cloud-comsumer-feign" target="1.8" />
+      <module name="spring-cloud-config" target="1.8" />
+      <module name="spring-cloud-config-client" target="1.8" />
+      <module name="spring-cloud-config-client-8001" target="1.8" />
+      <module name="spring-cloud-config-eureka-client-7001" target="1.8" />
+      <module name="spring-cloud-consumer" target="1.8" />
+      <module name="spring-cloud-consumer-feign" target="1.8" />
       <module name="spring-cloud-demo" target="1.8" />
+      <module name="spring-cloud-provider" target="1.8" />
+      <module name="spring-cloud-provider-6001" target="1.8" />
+      <module name="spring-cloud-provider-6002" target="1.8" />
+      <module name="spring-cloud-provider-hystrix-6003" target="1.8" />
+      <module name="spring-cloud-zuul-gateway" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

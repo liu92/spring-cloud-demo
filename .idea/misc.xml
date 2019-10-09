@@ -10,6 +10,20 @@
         <option value="$PROJECT_DIR$/service-feign/pom.xml" />
         <option value="$PROJECT_DIR$/../incubator-dubbo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-api/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server-7001/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server-7002/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-provider-6001/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-provider-6002/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-provider-hystrix-6003/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-config/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-config-eureka-client-7001/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-config-client-8001/pom.xml" />
       </list>
     </option>
   </component>

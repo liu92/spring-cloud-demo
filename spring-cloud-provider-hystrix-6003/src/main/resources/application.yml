@@ -1,0 +1,80 @@
+server:
+  port: 6003
+
+spring:
+  # 在集群模式下 这个名字要一样
+  application:
+    name: microservicecloud-provider
+  banner:
+    charset: utf-8
+  http:
+   encoding:
+     charset: UTF-8
+     enabled: true
+     force: true
+  messages:
+    encoding: UTF-8
+  datasource:
+       url: jdbc:mysql://127.0.0.1:3306/lin?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=true
+       username: root
+       password: 123
+       driver-class-name: com.mysql.cj.jdbc.Driver
+
+#   datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+#
+#    dbcp2:
+#      min-idle: 5                                           # 数据库连接池的最小维持连接数
+#      initial-size: 5                                       # 初始化连接数
+#      max-total: 5                                          # 最大连接数
+#      max-wait-millis: 200                                  # 等待连接获取的最大超时时间
+
+logging:
+   level:
+     org.springframework.web: trace
+
+mybatis:
+  config-location: classpath:mybatis/mybatis_cfg.xml        # mybatis配置文件所在路径
+  type-aliases-package: org.cloud.api.po                    # 所有Entity别名类所在包
+  mapper-locations:
+    - classpath:mybatis/mapper/*.xml                       # mapper映射文件
+#  Property 'configuration' and 'configLocation' can not specified with together
+#  configuration:
+#    map-underscore-to-camel-case: true
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+#      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eureka8761.com:8761/eureka/,http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+  # 这个是一个标识，表示的是eureka 注册中 status显示的标识，这样写比较清晰明了
+  instance:
+    instance-id: cloud-provider-hystrix-6003
+    # 访问路径可以显示ip地址
+    # 在点击这个ip地址链接时，会出现errorPage 错误，怎么处理呢？在pom文件中加入actuator 依赖，这个是用来完善监控信息的
+    prefer-ip-address: true
+
+# 在超链接中追加info 信息
+info:
+  app:
+   name: lin-microserviceclcloud
+#  company:
+#     name: www.lin.com
+   build:
+    artifactId: "@project.artifactId@"
+    version: "@project.version@"
+
+#   description: "@project.description@"
+#   version: "@project.version@"
+#   encoding: "@project.build.sourceEncoding@"
+#   java:
+#     version: "@java.version@"
+
+#info:
+#  app:
+#    name: "@project.name@"
+#    description: "@project.description@"
+#    version: "@project.version@"
+#    encoding: "@project.build.sourceEncoding@"
+#    java:
+#      version: "@java.version@"

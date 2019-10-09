@@ -17,6 +17,15 @@
         <module>service-feign</module>
         <module>eureka-client</module>
         <module>eureka-server</module>
+        <module>spring-cloud-config-client-8001</module>
+        <module>spring-cloud-config</module>
+        <module>spring-cloud-config-client</module>
+        <module>spring-cloud-provider</module>
+        <module>spring-cloud-provider-6001</module>
+        <module>spring-cloud-provider-6002</module>
+        <module>spring-cloud-config-eureka-client-7001</module>
+        <module>spring-cloud-provider-hystrix-6003</module>
+        <module>spring-cloud-zuul-gateway</module>
     </modules>
 
     <parent>
@@ -32,12 +41,13 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
         <mybatis.version>2.0.0</mybatis.version>
-        <spring.version>5.0.7.RELEASE</spring.version>
+        <spring.version>5.1.6.RELEASE</spring.version>
         <spring.data.jpa.version>2.1.8.RELEASE</spring.data.jpa.version>
         <servlet.version>4.0.1</servlet.version>
         <javax.persistence.version>2.2</javax.persistence.version>
         <mysql.version>8.0.11</mysql.version>
         <lombok.version>1.18.2</lombok.version>
+        <junit.version>4.12</junit.version>
     </properties>
 
     <dependencyManagement>
@@ -62,13 +72,15 @@
         <!--</dependency>-->
 
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql.version}</version>
-        </dependency>
+         <groupId>mysql</groupId>
+         <artifactId>mysql-connector-java</artifactId>
+         <version>${mysql.version}</version>
+       </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
         </dependency>
 
         <!-- Spring Dependency Begin -->
@@ -112,11 +124,7 @@
             <artifactId>spring-instrument</artifactId>
             <version>${spring.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-instrument-tomcat</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
@@ -158,11 +166,6 @@
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc-portlet</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.data</groupId>
@@ -181,11 +184,12 @@
             <artifactId>javax.persistence-api</artifactId>
             <version>${javax.persistence.version}</version>
         </dependency>
+
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-            <scope>provided</scope>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
         </dependency>
 
 
@@ -201,7 +205,30 @@
 
 
     <build>
+        <!--&lt;!&ndash;加入这个的意思是，在点击eureka链接的的info信息说明，我们把这个说明写入配置中去&ndash;&gt;-->
+        <!--<finalName>spring-cloud-demo</finalName>-->
+        <!--<resources>-->
+            <!--&lt;!&ndash;允许访问这个路径下的内容&ndash;&gt;-->
+            <!--<resource>-->
+                <!--<directory>src/main/resources</directory>-->
+                <!--<filtering>true</filtering>-->
+            <!--</resource>-->
+        <!--</resources>-->
+
         <plugins>
+            <!--下面这个插件就是负责解析的-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-resources-plugin</artifactId>-->
+                <!--<configuration>-->
+                    <!--<delimiters>-->
+                        <!--&lt;!&ndash;以 $结尾的 在src/main/resources的配置信息就能够读取&ndash;&gt;-->
+                        <!--<delimit>$</delimit>-->
+                    <!--</delimiters>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -220,6 +247,9 @@
                     <encoding>UTF-8</encoding> <!-- 字符集编码 -->
                 </configuration>
             </plugin>
+
+
+
         </plugins>
     </build>
 
